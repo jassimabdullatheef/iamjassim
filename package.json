@@ -1,0 +1,32 @@
+{
+  "name": "iamjassim",
+  "version": "1.0.0",
+  "description": "Jassim's Personal Portfolio website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jassimabdullatheef/iamjassim.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Jassim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jassimabdullatheef/iamjassim/issues"
+  },
+  "homepage": "https://github.com/jassimabdullatheef/iamjassim#readme"
+}
