@@ -43,6 +43,7 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function () {
   gulp.watch('dev/sass/**/*.sass', ['sass']);
+  gulp.watch('dev/scripts/**/*.js', ['script']);
 });
 
 gulp.task('default', ['webserver','sass', 'script', 'watch']);

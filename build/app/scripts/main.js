@@ -1,0 +1,1 @@
+var app=angular.module("iamjassim",[]);app.controller("mainController",["$scope",function(a){a.name="Jassim"}]);

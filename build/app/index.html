@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="iamjassim">
 <head>
   <meta charset="UTF-8">
   <title>iamjassim</title>
   <link href='https://fonts.googleapis.com/css?family=Copse|Asap:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="asset/styles/style.css">
 </head>
-<body>
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <h4>Heading 4</h4>
-  <h5>Heading 5</h5>
-  <h6>Heading 6</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, assumenda facilis, ea repellendus laboriosam amet odit quasi culpa, perspiciatis pariatur aspernatur sapiente! Sint, amet perferendis eaque omnis enim libero voluptas!</p>
+<body ng-controller="mainController">
+  <h1>{{1 + 2}}</h1>
+  <h2>{{name}}</h2>
 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, assumenda facilis, ea repellendus laboriosam amet odit quasi culpa, perspiciatis pariatur aspernatur sapiente! Sint, amet perferendis eaque omnis enim libero voluptas!</p>
+  <!-- Libraries -->
+  <script type="text/javascript" src="asset/bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="asset/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script type="text/javascript" src="asset/bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="asset/bower_components/jquery/dist/jquery.min.js">
+
+  </script>
   <script type="text/javascript" src = "scripts/main.js">
   </script>
 </body>
