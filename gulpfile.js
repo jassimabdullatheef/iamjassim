@@ -42,7 +42,7 @@ gulp.task('sass', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch('dev/sass/**/*.sass', ['sass', 'script']);
+  gulp.watch('dev/sass/**/*.sass', ['sass']);
 });
 
 gulp.task('default', ['webserver','sass', 'script', 'watch']);
