@@ -31,10 +31,9 @@ gulp.task('script', function(){
 // sass
 gulp.task('sass', function () {
   gulp.src('dev/sass/**/*.sass')
-    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/app/asset/styles'))
+    .pipe(gulp.dest('build/app/asset/styles'));
+  gulp.src(['build/app/asset/styles/01-tools/*.css','build/app/asset/styles/02-basics/*.css','build/app/asset/styles/03-modules/*.css','build/app/asset/styles/04-pages/*.css'])
     .pipe(concat('style.css'))
     .pipe(gulp.dest('build/app/asset/styles'));
 });
