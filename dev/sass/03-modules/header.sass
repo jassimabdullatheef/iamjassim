@@ -7,10 +7,12 @@ nav
   display: block
   background-color: $bgGray
   height: 60px
+  z-index: 100
   logo
     display: block
     float: left
     background-color: $bgGrayDark1
+    border-right: $bgGrayDark3 1px solid
     a
       text-decoration: none
       padding: 20px 25px
@@ -40,7 +42,8 @@ nav
           display: inline-block
           text-decoration: none
           color: $bermudaGray
-          padding: 22px 20px
+          padding: 20px 20px
+          border-top: 2px solid transparent
           font-size: 16px
           &:hover
             background-color: $bgGrayDark1
@@ -52,8 +55,23 @@ nav
                 font-size: 12px
                 color: $lightBermudaGray
         &.active
+          a
+            padding-top: 20px
+            border-top-color: $lightBermudaGray
+            background-color: $bgGrayDark1
+            &:hover
+              background-color: $bgGrayDark2
           ul.sub-menu
             display: inline-block
+            li
+              a
+                border: none
+                background-color: transparent
+                &:hover
+                  background-color: $bgGrayDark1
+              &.active
+                a
+                  color: $bermudaGray
   .nav-buttons
     float: right
     display: block
@@ -91,4 +109,29 @@ nav
             g
               fill: $bermudaGray
           &:hover
-            background-color: $bgGrayDark3
+            background-color: $bgGrayDark2
+@media(max-width : 850px)
+  nav
+    menu
+      ul
+        li.active
+          ul.sub-menu
+            display: none
+@media(max-width: 500px)
+  nav
+    logo
+      a
+        padding: 20px 15px
+        h4
+          font-size: 16px
+    menu
+      ul
+        li
+          a
+            padding: 23px 15px
+            font-size: 12px
+          &.active
+            a
+              padding-top: 23px
+    .nav-buttons
+      display: none
