@@ -9,10 +9,13 @@
 </head>
 <body ng-controller="mainController">
 
+  <div ng-view>
+
+  </div>
   <!-- Header -->
   <nav>
     <!-- Logo -->
-    <logo><a href="#"><h4>Jassim</h4></a></logo>
+    <logo><a href="#/"><h4>Jassim</h4></a></logo>
     <!-- Navigation Buttons -->
     <div class="nav-buttons">
       <ul>
@@ -45,14 +48,14 @@
     <!-- Menu -->
     <menu>
       <ul>
-        <li><a href="#">Works</a>
+        <li><a href="#/works">Works</a>
           <ul class="sub-menu">
             <li class="active"><a href="#">Websites</a></li>
             <li><a href="#">Branding</a></li>
             <li><a href="#">Others</a></li>
           </ul>
         </li>
-        <li class="active"><a href="#">Me</a>
+        <li class="active"><a href="#/me">Me</a>
           <ul class="sub-menu">
             <li><a href="#">Bio</a></li>
             <li><a href="#">Career</a></li>
@@ -60,7 +63,7 @@
             <li><a href="#">Skills</a></li>
           </ul>
         </li>
-        <li><a href="#">Connect</a></li>
+        <li><a href="#/connect">Connect</a></li>
       </ul>
     </menu>
 
