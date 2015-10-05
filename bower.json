@@ -1,0 +1,26 @@
+{
+  "name": "iamjassim",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jassimabdullatheef/iamjassim",
+  "authors": [
+    "Jassim Abdul Latheef <jassimabdullatheef@gmail.com>"
+  ],
+  "description": "This is personal portfolio website of Jassim",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/build/app/asset/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.4.5",
+    "angular-route": "~1.4.5",
+    "angular": "~1.4.5",
+    "jquery": "~2.1.4"
+  }
+}
