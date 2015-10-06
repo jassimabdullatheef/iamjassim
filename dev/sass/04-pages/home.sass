@@ -13,21 +13,37 @@
     .banner-button
       margin-top: 50px
       margin-bottom: 300px
+@media (max-width: $screen-md-max)
+  .banner
+    background:
+      size : 100%
+    .banner-descr
+      .banner-button
+        margin-bottom: 250px
 
 @media (max-width : $screen-sm-max)
   .banner
     background:
-      size : 200%
+      size : 150%
     .banner-descr
       margin-top: 0
       h4
         margin-top: 0
       .banner-button
         margin-top: 0
-        margin-bottom: 190px
+        margin-bottom: 300px
 
 @media (max-width : $screen-xs-max)
   .banner
+    background:
+      size : 200%
     .banner-descr
       .banner-button
-        margin-bottom: 150px
+        margin-bottom: 180px
+@media (min-width: 350px) and (max-width: $screen-xs-max)
+  .banner
+    background:
+      size : 200%
+    .banner-descr
+      .banner-button
+        margin-bottom: 250px
