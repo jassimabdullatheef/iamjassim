@@ -5,29 +5,34 @@ app.config(['$routeProvider',function($routeProvider){
   $routeProvider
     .when('',{
       templateUrl : 'partials/home.html',
-      controller : 'mainController'
+      controller : 'mainController',
+      activeTab : 'home'
     })
     .when('/works',{
       templateUrl : 'partials/works.html',
-      controller : 'mainController'
+      controller : 'mainController',
+      activeTab : 'works'
     })
     .when('/me',{
       templateUrl : 'partials/me.html',
-      controller : 'mainController'
+      controller : 'mainController',
+      activeTab : 'me'
     })
     .when('/connect',{
       templateUrl : 'partials/connect.html',
-      controller : 'mainController'
+      controller : 'mainController',
+      activeTab : 'connect'
     })
     .otherwise({
       templateUrl : 'partials/home.html',
-      controller : 'mainController'
+      controller : 'mainController',
+      activeTab : 'home'
     });
 
 }]);
 
-app.controller('mainController',['$scope',function($scope){
+app.controller('mainController',['$scope','$route',function($scope,$route){
   $scope.name = 'Jassim';
+  $scope.$route = $route;
 
-  
 }]);

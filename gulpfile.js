@@ -10,6 +10,7 @@ gulp.task('webserver', function() {
   gulp.src('build/app')
     .pipe(webserver({
       livereload: true,
+      host: '0.0.0.0',
       // directoryListing: true,
       open: true
     }));

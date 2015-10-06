@@ -1,5 +1,5 @@
 // Import Color sass file
-@import "colors"
+@import "config"
 
 // General
 body
@@ -68,7 +68,7 @@ h2
 
 
 h3
-  font-size: 28px
+  font-size: 34px
   line-height: 50px
   margin: 0px 0px 0.5em 0px
   font-family: "Asap"
@@ -77,6 +77,7 @@ h3
 
 
 h4
+  font-size: 24px
   margin-bottom: 25px
   font-weight: normal
   font-style: normal
@@ -89,12 +90,14 @@ h4
     font-style: normal
 
 h5
+  font-size: 18px
   margin-bottom: 25px
   font-style: normal
   font-weight: normal
 
 
 h6
+  font-size: 14px
   font-weight: 400
   margin-bottom: 25px
 
@@ -104,6 +107,7 @@ p
   font-family: 'Copse' serif
   font-weight: 400
   font-style: normal
+  font-size: 18px
   &.intro
      font-size: 20px
      line-height: 28.89px
@@ -276,3 +280,9 @@ a
   font-family: "Asap"
   font-weight: 400
   font-style: normal
+
+@media(max-width : $screen-sm-max)
+  h1
+    font-size: 32px !important
+  h5
+    font-size: 16px

@@ -1,5 +1,5 @@
 angular.element(document).ready(function(){
-  console.log('Triggered');
+  
   var pageJson = {
     page :[
       { name : 'Home',

@@ -9,25 +9,25 @@
 </head>
 <body ng-controller="mainController">
 
-  <div ng-view id="pt-main" class="pt-perspective" >
+  <div ng-view>
 
   </div>
   <!-- Header -->
   <nav>
     <!-- Logo -->
     <logo><a href="#"><h4>Jassim</h4></a></logo>
-  
+
     <!-- Menu -->
     <menu>
       <ul>
-        <li><a href="#/works">Works</a>
+        <li ng-class="{active: $route.current.activeTab == 'works'}"  ><a href="#/works">Works</a>
           <ul class="sub-menu">
-            <li class="active"><a href="#">Websites</a></li>
+            <li><a href="#">Websites</a></li>
             <li><a href="#">Branding</a></li>
             <li><a href="#">Others</a></li>
           </ul>
         </li>
-        <li class="active"><a href="#/me">Me</a>
+        <li ng-class="{active: $route.current.activeTab == 'me'}" ><a href="#/me">Me</a>
           <ul class="sub-menu">
             <li><a href="#">Bio</a></li>
             <li><a href="#">Career</a></li>
@@ -35,7 +35,7 @@
             <li><a href="#">Skills</a></li>
           </ul>
         </li>
-        <li><a href="#/connect">Connect</a></li>
+        <li ng-class="{active: $route.current.activeTab == 'connect'}"><a href="#/connect">Connect</a></li>
       </ul>
     </menu>
 
