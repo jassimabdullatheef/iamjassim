@@ -6,6 +6,7 @@
     size: 100%
     repeat : no-repeat
     position: center bottom
+  margin-bottom: 20px
   .banner-descr
     margin-top: 100px
     h4
@@ -47,3 +48,33 @@
     .banner-descr
       .banner-button
         margin-bottom: 250px
+
+
+// Services
+.row.services
+  @include gradient(179deg, #83ABFF 1%, #7697DC 99%)
+  .header
+    background:
+      image: url("../images/header-bg-icons.png")
+      size: 100%
+      attachment: fixed
+      repeat : repeat-y
+    padding: 100px 0
+    h2
+      color: $white !important
+      &:after
+        content: ''
+        display: block
+        width: 100%
+        height: 4px
+        background-color: $lightBlue3
+        margin-top: 10px
+        @include border-radius(10px)
+    p
+      color: $lightBlue1
+
+
+@media (max-width : $screen-sm-max)
+  .row.services
+    .header
+      padding: 50px 0

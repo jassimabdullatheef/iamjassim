@@ -45,3 +45,7 @@
     -webkit-box-shadow: $property
     -moz-box-shadow: $property
     box-shadow: $property
+@mixin gradient($property...)
+    background-image: -webkit-linear-gradient($property)
+    background-image: -o-linear-gradient($property)
+    background-image: linear-gradient($property)
