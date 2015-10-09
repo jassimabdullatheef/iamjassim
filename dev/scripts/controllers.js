@@ -10,19 +10,33 @@ app.controller('homeController',['$scope',function($scope){
 
   $scope.slides = [
     {
-      image : 'Temporary Image 1',
-      caption : 'Temporary Caption 1',
-      detail : 'Temporary Description 1'
+      id : 0,
+      image : 'asset/images/responsive-website-designing.png',
+      caption : 'Web Designing',
+      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
     },
     {
-      image : 'Temporary Image 2',
-      caption : 'Temporary Caption 2',
-      detail : 'Temporary Description 2'
+      id : 1,
+      image : 'asset/images/Logo-Design.png',
+      caption : 'CMS Development',
+      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
+    },
+    {
+      id : 2,
+      image : 'asset/images/cms-development.png',
+      caption : 'CMS Development',
+      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
+    },
+    {
+      id : 3,
+      image : 'asset/images/UI-Designing.png',
+      caption : 'UI/UX Designing',
+      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
     }
   ];
 
   // $scope.slider =  slider.showSlider(slides);
- $scope.test = "Hello Dad";
+
 
 
 }]);

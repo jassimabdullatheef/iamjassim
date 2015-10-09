@@ -1,12 +1,20 @@
 <ul class="slider">
-  <li class="slide" ng-repeat="slide in slides">
+  <li class="slide" ng-repeat="slide in slides" ng-class="{'active' : slide.id == active}">
     <div class="slider-image">
-      <!-- <img ng-src='{{slides.image}}'> -->
-      {{slide.image}}
+      <img ng-src='{{slide.image}}' alt="{{slide.caption}}">
     </div>
     <div class="slide-content">
-      <h3>{{slide.caption}}</h3>
-      <p>{{slide.detail}}</p>
+      <div class="slide-header col-xs-12 col-md-4 col-lg-4">
+        <h3>{{slide.caption}}</h3>
+      </div>
+      <div class="slide-detail col-xs-12 col-md-8 col-lg-8">
+        <p>{{slide.detail}}</p>
+      </div>
     </div>
   </li>
 </ul>
+<div class="slider-nav">
+    <ul class="nav">
+      <li ng-repeat="slide in slides" ng-click="slideActive(slide.id)"  ng-class="{'active' : slide.id == active}"></li>
+    </ul>
+</div>

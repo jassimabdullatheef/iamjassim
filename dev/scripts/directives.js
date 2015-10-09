@@ -6,7 +6,10 @@ app.directive('sliderTemplate',function(){
     controller: ['$scope',function($scope){
       $scope.slides = $scope.$parent.slides;
       $scope.test = 'Hello';
-      console.log($scope.$parent.slides);
+      $scope.active = 0;
+      $scope.slideActive = function(id){
+        $scope.active = id;
+      };
     }]
   };
 });

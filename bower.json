@@ -1,12 +1,12 @@
 {
   "name": "iamjassim",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/jassimabdullatheef/iamjassim",
   "authors": [
     "Jassim Abdul Latheef <jassimabdullatheef@gmail.com>"
   ],
   "description": "This is personal portfolio website of Jassim",
-  "main": "",
+  "main": "gulpfile.js",
   "moduleType": [],
   "license": "MIT",
   "ignore": [
@@ -22,5 +22,11 @@
     "angular-route": "~1.4.5",
     "angular": "~1.4.5",
     "jquery": "~2.1.4"
-  }
+  },
+  "keywords": [
+    "Website",
+    "Angular",
+    "Gulp"
+  ],
+  "private": true
 }
