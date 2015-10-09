@@ -1,5 +1,14 @@
 var app = angular.module('iamjassim',['ngRoute']);
 
+app.controller('mainController',['$scope','$route',function($scope,$route){
+  $scope.name = 'Jassim';
+  $scope.$route = $route;
+
+}]);
+
+
+
+
 app.config(['$routeProvider',function($routeProvider){
   // var pages = JSON.parse(pageJson);
   $routeProvider
@@ -31,8 +40,18 @@ app.config(['$routeProvider',function($routeProvider){
 
 }]);
 
-app.controller('mainController',['$scope','$route',function($scope,$route){
-  $scope.name = 'Jassim';
-  $scope.$route = $route;
+app.controller('sliderController',['$scope',function($scope){
+
+
+
+
+
+}]);
+
+app.controller('homeController',['$scope',function($scope){
+
+
+
+
 
 }]);
