@@ -1,0 +1,12 @@
+<ul class="slider">
+  <li class="slide" ng-repeat="slide in slides">
+    <div class="slider-image">
+      <!-- <img ng-src='{{slides.image}}'> -->
+      {{slide.image}}
+    </div>
+    <div class="slide-content">
+      <h3>{{slide.caption}}</h3>
+      <p>{{slide.detail}}</p>
+    </div>
+  </li>
+</ul>

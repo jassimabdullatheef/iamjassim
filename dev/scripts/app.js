@@ -1,11 +1,5 @@
 var app = angular.module('iamjassim',['ngRoute']);
 
-app.controller('mainController',['$scope','$route',function($scope,$route){
-  $scope.name = 'Jassim';
-  $scope.$route = $route;
-
-}]);
-
 
 
 
@@ -37,21 +31,5 @@ app.config(['$routeProvider',function($routeProvider){
       controller : 'mainController',
       activeTab : 'home'
     });
-
-}]);
-
-app.controller('sliderController',['$scope',function($scope){
-
-
-
-
-
-}]);
-
-app.controller('homeController',['$scope',function($scope){
-
-
-
-
 
 }]);
