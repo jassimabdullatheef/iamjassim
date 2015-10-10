@@ -18,7 +18,7 @@ app.controller('homeController',['$scope',function($scope){
     {
       id : 1,
       image : 'asset/images/Logo-Design.png',
-      caption : 'CMS Development',
+      caption : 'Branding',
       detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
     },
     {
@@ -34,6 +34,8 @@ app.controller('homeController',['$scope',function($scope){
       detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
     }
   ];
+  $scope.sliderAutoPlay = true;
+  $scope.sliderInterval = 5000;
 
   // $scope.slider =  slider.showSlider(slides);
 

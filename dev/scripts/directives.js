@@ -5,11 +5,21 @@ app.directive('sliderTemplate',function(){
     scope: {},
     controller: ['$scope',function($scope){
       $scope.slides = $scope.$parent.slides;
-      $scope.test = 'Hello';
       $scope.active = 0;
+      $scope.autoplay = $scope.$parent.sliderAutoPlay;
+      $scope.autoplayTime = $scope.$parent.sliderInterval;
       $scope.slideActive = function(id){
         $scope.active = id;
       };
+      if($scope.autoplay){
+        setInterval(function(){
+          if($scope.active < $scope.slides.length -1){
+            $scope.$apply(function(){ $scope.slideActive($scope.active+1); });
+          }else{
+            $scope.$apply(function(){ $scope.slideActive(0); });
+          }
+        },$scope.autoplayTime);
+      }
     }]
   };
 });

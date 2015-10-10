@@ -15,17 +15,39 @@ ul.slider
       width: 100%
       display: block
       text-align: center
+      -webkit-animation-duration: 0.5s
+      animation-duration: 0.5s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
       img
         max-width: 720px
         width: 100%
     .slide-content
       width: 100%
       .slide-header,.slide-detail
+        -webkit-animation-duration: 0.5s
+        animation-duration: 0.5s
+        -webkit-animation-fill-mode: both
+        animation-fill-mode: both
         h3,p
           display: block
           float: left
+      .slide-header
+        animation-delay: 0.1s
+        -webkit-animation-delay: 0.1s
+      .slide-detail
+        animation-delay: 0.2s
+        -webkit-animation-delay: 0.2s
     &.active
       display: block
+      .slider-image
+        -webkit-animation-name: fadeInRight
+        animation-name: fadeInRight
+      .slide-content
+        .slide-header,.slide-detail
+          -webkit-animation-name: fadeInDown
+          animation-name: fadeInDown
+
 .slider-nav
   width: 100%
   float: left

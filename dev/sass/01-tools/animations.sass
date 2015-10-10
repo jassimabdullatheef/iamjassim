@@ -1,3 +1,4 @@
+@import 'mixins'
 .animated
   -webkit-animation-duration: 1s
   animation-duration: 1s
@@ -8,24 +9,63 @@
   -webkit-animation-iteration-count: infinite
   animation-iteration-count: infinite
 
+// Slide in Up
 @-webkit-keyframes slideInUp
   from
-    -webkit-transform: translate3d(0, 100%, 0)
-    transform: translate3d(0, 100%, 0)
+    @include transform(translate3d(0, 100%, 0))
     visibility: visible
   to
-    -webkit-transform: translate3d(0, 0, 0)
-    transform: translate3d(0, 0, 0)
+    @include transform(translate3d(0, 0, 0))
 
 @keyframes slideInUp
   from
-    -webkit-transform: translate3d(0, 100%, 0)
-    transform: translate3d(0, 100%, 0)
+    @include transform(translate3d(0, 100%, 0))
     visibility: visible
-  to 
-    -webkit-transform: translate3d(0, 0, 0)
-    transform: translate3d(0, 0, 0)
+  to
+    @include transform(translate3d(0, 0, 0))
 
 .slideInUp
   -webkit-animation-name: slideInUp
   animation-name: slideInUp
+
+// Fade In Right
+@-webkit-keyframes fadeInRight
+  from
+    opacity: 0
+    @include transform(rotate(10deg) translate3d(20%, 0px, 0px))
+  to
+    opacity: 1
+    @include transform(none)
+
+@keyframes fadeInRight
+  from
+    opacity: 0
+    @include transform(rotate(10deg) translate3d(20%, 0px, 0px))
+  to
+    opacity: 1
+    @include transform(none)
+
+.fadeInRight
+  -webkit-animation-name: fadeInRight
+  animation-name: fadeInRight
+
+// Fade in Down
+@-webkit-keyframes fadeInDown
+  from
+    opacity: 0
+    @include transform(translate3d(0, -30px, 0))
+  to
+    opacity: 1
+    @include transform(none)
+
+@keyframes fadeInDown
+  from
+    opacity: 0
+    @include transform(translate3d(0, -30px, 0))
+  to
+    opacity: 1
+    @include transform(none)
+
+.fadeInDown
+  -webkit-animation-name: fadeInDown
+  animation-name: fadeInDown
