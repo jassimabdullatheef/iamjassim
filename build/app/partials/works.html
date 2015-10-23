@@ -2,8 +2,10 @@
   <div class="row works-all">
     <div class="container">
         <div  class="col-xs-12 col-md-6 col-lg-4 text-center work-thumbnail" ng-repeat="work in works" back-img="{{work.thumbnail}}">
-          <h4>{{work.caption}}</h4>
-          <a href="#" class="btn btn-holo">View Work</a>
+          <div class="work-dscr" style="background-color :{{work.color}}">
+            <h4>{{work.caption}}</h4>
+            <a href="#" class="btn btn-holo">View Work</a>
+          </div>
         </div>
     </div>
   </div>

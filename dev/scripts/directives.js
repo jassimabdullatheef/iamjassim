@@ -31,10 +31,7 @@ app.directive('backImg', function(){
         var url = attrs.backImg;
         element.css({
             'background-image': 'url(' + url +')',
-            'background-size' : 'cover',
-            'max-height' : $('.work-thumbnail').width()+'px',
-            'min-height' : ($('.work-thumbnail').width() - 50)+'px'
+            'background-size' : 'cover'
         });
-        console.log($('.work-thumbnail').width());
     };
 });

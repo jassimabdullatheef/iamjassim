@@ -45,59 +45,59 @@ app.controller('workController',['$scope',function($scope){
       caption : 'Fudbuddy',
       cat : 'branding',
       catName : 'Branding',
+      color : '#1AA994',
       thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
     },
     {
       caption : 'Fudbuddy Website',
       cat : 'website',
       catName : 'Website',
+      color : '#CABC29',
       thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
     },
     {
       caption : 'Fudbuddy',
       cat : 'branding',
       catName : 'Branding',
+      color : '#1AA994',
       thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
     },
     {
       caption : 'Fudbuddy Website',
       cat : 'website',
       catName : 'Website',
+      color : '#CABC29',
       thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
     },
     {
       caption : 'Fudbuddy',
       cat : 'branding',
       catName : 'Branding',
+      color : '#1AA994',
       thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
     },
     {
       caption : 'Fudbuddy Website',
       cat : 'website',
       catName : 'Website',
+      color : '#CABC29',
       thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
     },
     {
       caption : 'Fudbuddy',
       cat : 'branding',
       catName : 'Branding',
+      color : '#1AA994',
       thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
     },
     {
       caption : 'Fudbuddy Website',
       cat : 'website',
       catName : 'Website',
+      color : '#CABC29',
       thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
     }
   ];
-  //Grid Width
-  $scope.$watch(
-    function(){return $('.work-thumbnail').css('width');},
-    function(){
-      $scope.gridWidth = $('.work-thumbnail').css('width');
-      // console.log($scope.gridWidth);
-      //console.log($('.work-thumbnail').width());
-    }
-  );
+
 
 }]);
