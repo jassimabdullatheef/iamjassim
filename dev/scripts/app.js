@@ -13,7 +13,7 @@ app.config(['$routeProvider',function($routeProvider){
     })
     .when('/works',{
       templateUrl : 'partials/works.html',
-      controller : 'mainController',
+      controller : 'workController',
       activeTab : 'works'
     })
     .when('/me',{

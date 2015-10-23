@@ -1,3 +1,4 @@
+// Slider Directive
 app.directive('sliderTemplate',function(){
   return{
     templateUrl: '../partials/slider.html',
@@ -22,4 +23,18 @@ app.directive('sliderTemplate',function(){
       }
     }]
   };
+});
+
+// Background Image Directive
+app.directive('backImg', function(){
+    return function(scope, element, attrs){
+        var url = attrs.backImg;
+        element.css({
+            'background-image': 'url(' + url +')',
+            'background-size' : 'cover',
+            'max-height' : $('.work-thumbnail').width()+'px',
+            'min-height' : ($('.work-thumbnail').width() - 50)+'px'
+        });
+        console.log($('.work-thumbnail').width());
+    };
 });

@@ -1,13 +1,11 @@
 app.controller('mainController',['$scope','$route',function($scope,$route){
   $scope.name = 'Jassim';
   $scope.$route = $route;
-
 }]);
 
 
 //Home Controller
 app.controller('homeController',['$scope',function($scope){
-
   $scope.slides = [
     {
       id : 0,
@@ -36,19 +34,70 @@ app.controller('homeController',['$scope',function($scope){
   ];
   $scope.sliderAutoPlay = true;
   $scope.sliderInterval = 5000;
-
   // $scope.slider =  slider.showSlider(slides);
-
-
-
 }]);
 
 
-//Slider Controler
-
-app.controller('sliderController',['$scope',function($scope){
-
-  // $scope.slides = $scope.$parent.slides;
-
+// Works Controller
+app.controller('workController',['$scope',function($scope){
+  $scope.works = [
+    {
+      caption : 'Fudbuddy',
+      cat : 'branding',
+      catName : 'Branding',
+      thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
+    },
+    {
+      caption : 'Fudbuddy Website',
+      cat : 'website',
+      catName : 'Website',
+      thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
+    },
+    {
+      caption : 'Fudbuddy',
+      cat : 'branding',
+      catName : 'Branding',
+      thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
+    },
+    {
+      caption : 'Fudbuddy Website',
+      cat : 'website',
+      catName : 'Website',
+      thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
+    },
+    {
+      caption : 'Fudbuddy',
+      cat : 'branding',
+      catName : 'Branding',
+      thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
+    },
+    {
+      caption : 'Fudbuddy Website',
+      cat : 'website',
+      catName : 'Website',
+      thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
+    },
+    {
+      caption : 'Fudbuddy',
+      cat : 'branding',
+      catName : 'Branding',
+      thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
+    },
+    {
+      caption : 'Fudbuddy Website',
+      cat : 'website',
+      catName : 'Website',
+      thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
+    }
+  ];
+  //Grid Width
+  $scope.$watch(
+    function(){return $('.work-thumbnail').css('width');},
+    function(){
+      $scope.gridWidth = $('.work-thumbnail').css('width');
+      // console.log($scope.gridWidth);
+      //console.log($('.work-thumbnail').width());
+    }
+  );
 
 }]);
