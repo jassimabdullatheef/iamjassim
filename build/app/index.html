@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="asset/styles/style.css">
 </head>
 <body ng-controller="mainController">
-
   <div ng-view>
 
   </div>
@@ -20,11 +19,12 @@
     <!-- Menu -->
     <menu>
       <ul>
-        <li ng-class="{active: $route.current.activeTab == 'works'}"  ><a href="#/works">Works</a>
+        <li ng-class="{active: $route.current.activeTab == 'works'}"  ><a href="#/works" ng-click="filterView('all')">Works</a>
           <ul class="sub-menu">
-            <li><a href="#">Websites</a></li>
-            <li><a href="#">Branding</a></li>
-            <li><a href="#">Others</a></li>
+            <!-- <li><a href="" >All</a></li> -->
+            <li><a href="" ng-click="filterView('website')">Websites</a></li>
+            <li><a href="" ng-click="filterView('branding')">Branding</a></li>
+            <li><a href="" ng-click="filterView('others')">Others</a></li>
           </ul>
         </li>
         <li ng-class="{active: $route.current.activeTab == 'me'}" ><a href="#/me">Me</a>

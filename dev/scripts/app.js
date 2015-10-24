@@ -1,4 +1,4 @@
-var app = angular.module('iamjassim',['ngRoute']);
+var app = angular.module('iamjassim',['ngRoute','ngAnimate']);
 
 
 

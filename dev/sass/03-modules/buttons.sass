@@ -8,11 +8,11 @@
   &:hover
     text-decoration: none
     @include transform(scale(1.03))
-    @include box-shadow(rgba(255, 255, 255, 0.2) 0px 0px 100px inset)
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 0px 100px inset)
   &:focus
     text-decoration: none
     @include transform(scale(0.97))
-    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 0px 100px inset)
+    @include box-shadow(rgba(0, 0, 0, 0.3) 0px 0px 100px inset)
   &.btn-blue
     background-color: $blue
     color: white
@@ -20,6 +20,6 @@
     background-color: $orange
     color: white
   &.btn-holo
-    background-color: rgba(0,0,0,0.3)
+    background-color: rgba(0,0,0,0.1)
     border: 1px solid $white
     color: $white
