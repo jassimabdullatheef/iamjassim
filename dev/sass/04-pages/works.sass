@@ -8,6 +8,7 @@
     max-height: 380px
     overflow: hidden
     background-position: center
+
     @include transition(all ease 0.5s)
     @include transform(scale(0.9))
     .work-dscr
@@ -48,9 +49,10 @@
 
     &.active
       @include transform(scale(1))
+      cursor: pointer
       &::after
         display: none
-      &:hover
+      &:hover,&:focus,&:active
         .work-dscr
           @include transform(scale(1))
           visibility: visible
@@ -66,3 +68,70 @@
             @include transform(scale(1) translate(0px, 0px))
             &:hover
               @include transform(scale(1.03) translate(0px, 0px))
+
+// Work Single
+.work-single
+  text-align: center
+  h1,h2,h3,h4,h5,h6,p,i,strong
+    text-align: left
+  .work-details
+    padding: 20px 0 0 0
+    margin-left: 0px
+    z-index: 10
+    color: $white
+    position: fixed
+    width: 100%
+    text-align: left
+    background:
+      image: url("../images/header-bg-icons.png")
+      size: 100%
+      attachment: fixed
+      repeat : repeat
+    @include box-shadow(rgba(0, 0, 0, 0.1) 0px 5px 10px,rgba(0, 0, 0, 0.15) 0px -100px 100px inset)
+    .buttons
+      float: right
+      margin-top: -55px
+      width: 60px
+    .info-btn
+      margin-right: 10px
+    .close-btn, .info-btn
+      width: 22px
+      display: inline-block
+      svg
+        width: 100%
+    h4
+      font-weight: 300
+    h1,h2,h3,h4,h5,h6,p,i,strong,span
+      color: $white
+    .info
+      display: none
+      &.fadeIn
+        display: block
+
+
+      .btn
+        margin-top: 10px
+        margin-left: 0
+
+
+  .work-images
+    padding: 150px 10px 50px 10px
+    background-color: #e5e5e5
+    img
+      @include box-shadow(rgba(0, 0, 0, 0.4) 0px 3px 8px)
+      border: 1px solid rgba(255,255,255,0.2)
+
+@media(max-width: $screen-xs-max)
+  .work-single
+    .work-details
+      padding-top: 15px
+      h4
+        font-size: 18px
+        line-height: 18px
+        margin-bottom: 15px
+      .buttons
+        margin-top: -35px
+        .close-btn,.info-btn
+          width: 20px
+    .work-images
+      padding-top: 100px

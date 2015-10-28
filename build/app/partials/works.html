@@ -1,10 +1,10 @@
 <div ng-controller="workController">
   <div class="row works-all">
     <div class="container">
-        <div  class="col-xs-12 col-md-6 col-lg-4 text-center work-thumbnail" ng-repeat="work in works" ng-class="{active : isActive(work.cat)}" back-img="{{work.thumbnail}}">
+        <div  class="col-xs-12 col-md-6 col-lg-4 text-center work-thumbnail" ng-repeat="work in works" ng-class="{active : isActive(work.cat)}" ng-click="go('works/'+work.url)" back-img="{{work.thumbnail}}">
           <div class="work-dscr" style="background-color :{{work.color}}">
             <h5>{{work.caption}}</h5>
-            <a href="#" class="btn btn-holo">View Work</a>
+            <a href="#/works/{{work.url}}" class="btn btn-holo">View Work</a>
             <div class="cat">
               <pre>{{work.catName}}</pre>
             </div>

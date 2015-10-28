@@ -1,7 +1,7 @@
 @import '../02-basics/config'
 .btn
   display: inline-block
-  padding: 15px 50px
+  padding: 12px 50px
   margin: 0px 10px 20px
   @include border-radius(50px)
   @include transition(all 0.2s ease)
@@ -23,3 +23,7 @@
     background-color: rgba(0,0,0,0.1)
     border: 1px solid $white
     color: $white
+  &.btn-white
+    background-color: $white
+    border: 1px solid $white
+    color: $btn-primary-border

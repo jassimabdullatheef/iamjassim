@@ -16,7 +16,7 @@ app.controller('mainController',['$scope','$route','workServices',function($scop
       // }
       workServices.activeThumbs = [cat].slice();
     }
-    console.log(workServices.activeThumbs);
+    // console.log(workServices.activeThumbs);
   };
 }]);
 
@@ -56,136 +56,154 @@ app.controller('homeController',['$scope',function($scope){
 
 
 // Works Controller
-app.controller('workController',['$scope','workServices',function($scope, workServices){
-  $scope.works = [
-    {
-      caption : 'Devious Angel',
-      cat : 'others',
-      catName : 'Banner Design',
-      color : '#7A7BC7',
-      thumbnail : 'asset/images/works/devious-angel-thumb.jpg'
-    },{
-      caption : 'Profile Card',
-      cat : 'others',
-      catName : 'UI Design',
-      color : '#b9c8d0',
-      thumbnail : 'asset/images/works/profile-UI.jpg'
-    },{
-      caption : 'Delmon Group of Companies',
-      cat : 'website',
-      catName : 'Website Design & Development',
-      color : '#4084D7',
-      thumbnail : 'asset/images/works/delmon-thumb.jpg'
-    },
-    {
-      caption : 'Fudbuddy',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#1AA994',
-      thumbnail : 'asset/images/works/fudbuddy-logo.jpg'
-    },
-    {
-      caption : 'Movie Card',
-      cat : 'others',
-      catName : 'UI Design',
-      color : '#EA4B25',
-      thumbnail : 'asset/images/works/Movie-poster-UI.jpg'
-    },
-    {
-      caption : 'Fahmi Rumiah',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#AA5585',
-      thumbnail : 'asset/images/works/fahmi-thumb.jpg'
-    },
-    {
-      caption : 'Boost',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#302837',
-      thumbnail : 'asset/images/works/boost-thumb.jpg'
-    },
-    {
-      caption : 'Mobile Signin',
-      cat : 'others',
-      catName : 'UI Design',
-      color : '#5F96DC',
-      thumbnail : 'asset/images/works/Journal-Signin-UI-thumb.jpg'
-    },
-    {
-      caption : 'Fudbuddy',
-      cat : 'website',
-      catName : 'Website Design',
-      color : '#CABC29',
-      thumbnail : 'asset/images/works/fudbuddy-website.jpeg'
-    },
-    {
-      caption : 'AlQudwa',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#C1A141',
-      thumbnail : 'asset/images/works/alqudwa-thumb.jpg'
-    },
-    {
-      caption : 'Abu Abdul Aziz Studio & Labs',
-      cat : 'website',
-      catName : 'Website Design & Development',
-      color : '#1A4071',
-      thumbnail : 'asset/images/works/asl-thumb.jpg'
-    },
-    {
-      caption : 'Loyal IT Solutions',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#0C70BB',
-      thumbnail : 'asset/images/works/loyal-thumb.jpg'
-    },
-    {
-      caption : 'Breaking News',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#87ACB2',
-      thumbnail : 'asset/images/works/Breaking-news-thumb.jpg'
-    },
-    {
-      caption : 'My Personal Portfolio',
-      cat : 'website',
-      catName : 'Website Design',
-      color : '#A3B488',
-      thumbnail : 'asset/images/works/iamjassimv2-thumb.jpg'
-    },
-    {
-      caption : 'Krishna Plywoods',
-      cat : 'website',
-      catName : 'Website Design',
-      color : '#E28C43',
-      thumbnail : 'asset/images/works/krishna-thumb.jpg'
-    },
-    {
-      caption : 'Aryas Group',
-      cat : 'branding',
-      catName : 'Brand Identity Design',
-      color : '#239BBA',
-      thumbnail : 'asset/images/works/aryas-thumb.jpg'
-    },
-    {
-      caption : 'Holymatha Overseas',
-      cat : 'website',
-      catName : 'Website Design',
-      color : '#87CDE4',
-      thumbnail : 'asset/images/works/holymatha-thumb.jpg'
-    },
-    {
-      caption : 'Minion',
-      cat : 'others',
-      catName : 'Photoshop Painting',
-      color : '#F9D563',
-      thumbnail : 'asset/images/works/minion-thumb.jpg'
+app.controller('workController',['$scope','$routeParams','$location', 'workServices', 'Works',function($scope, $routeParams, $location, workServices, Works){
+  $scope.works = Works.query();
+  var worksArray = Works.query();
+  $scope.url = $routeParams.url;
+  $scope.infoActive = false;
+  var workArray = function(url){
+    for(var i =0; i< $scope.works.length; i++){
+      if($scope.works[i].url == url){
+        return $scope.works[i];
+      }
     }
-  ];
+  };
+
+  $scope.go = function (path) {
+    $location.path(path);
+    // console.log(path);
+    $scope.infoActive = false;
+  };
+  // $scope.work = workArray($scope.url);
+  $scope.work =  worksArray;
+  // console.log(worksArray);
+
+  $scope.showInfo = function(){
+    $scope.infoActive = ($scope.infoActive === true)?false:true;
+  };
+
+
   $scope.isActive = function(cat){
     return workServices.activeThumbs.indexOf(cat)>=0?true:false;
 
   };
 
+}]);
+
+app.controller('meController',['$scope',function($scope){
+  $scope.jobs = [
+    {
+      title : 'Web Specialist and Operations Officer',
+      company : 'Delmon Group of Companies',
+      place : 'Dammam, Saudi Arabia',
+      From : 'Nov, 2013',
+      To : 'Present',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },{
+      title : 'Full Stack Designer and Developer',
+      company : 'Freelance',
+      place : 'Dammam, Saudi Arabia',
+      From : 'Sep, 2013',
+      To : 'Present',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },{
+      title : 'Web Designer and Developer',
+      company : 'Count2infinity',
+      place : 'Kerala, India',
+      From : 'Mar, 2013',
+      To : 'Sep, 2013',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },{
+      title : 'Social Interactive Media Advicer',
+      company : '[24/7] Inc.',
+      place : 'Banglore, India',
+      From : 'Oct, 2012',
+      To : 'Feb, 2013',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }
+  ];
+  $scope.courses = [
+    {
+      name : 'Bachelor of Computer Apllication',
+      school : 'Mahatma Gandhi University',
+      place : 'Kerala, India',
+      From : '2008',
+      To : '2011',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },
+    {
+      name : 'CCNA',
+      school : 'B.Soft',
+      place : 'Cochin, India',
+      From : 'May, 2012',
+      To : '',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },
+    {
+      name : 'MCITP',
+      school : 'B.Soft',
+      place : 'Cochin, India',
+      From : 'May, 2012',
+      To : '',
+      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }
+  ];
+  $scope.skills = [
+    {
+      name : 'HTML',
+      percentage : 100
+    },
+    {
+      name : 'CSS',
+      percentage : 95
+    },
+    {
+      name : 'Javascript',
+      percentage : 80
+    },
+    {
+      name : 'jQuery',
+      percentage : 90
+    },
+    {
+      name : 'Angular.JS',
+      percentage : 70
+    },
+    {
+      name : 'Node.JS',
+      percentage : 40
+    },
+    {
+      name : 'Gulp.JS',
+      percentage : 60
+    },
+    {
+      name : 'Wordpress',
+      percentage : 80
+    },
+    {
+      name : 'PHP',
+      percentage : 30
+    },
+    {
+      name : 'MySQL',
+      percentage : 30
+    },
+    {
+      name : 'SEO',
+      percentage : 35
+    },
+    {
+      name : 'Adobe Photoshop',
+      percentage : 95
+    },
+    {
+      name : 'Adobe Illustrator',
+      percentage : 70
+    },
+    {
+      name : 'Sketch',
+      percentage : 100
+    }
+  ];
 }]);

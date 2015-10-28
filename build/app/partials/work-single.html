@@ -1,0 +1,52 @@
+<div class="work-single" ng-controller="workController" >
+  <div ng-repeat="work in works | filter: url">
+    <div class="row work-details  animated fadeInDown" style="background-color:{{work.color}}">
+      <div class="container header">
+        <h4 >{{work.caption}}</h4>
+        <div class="buttons">
+          <a href="" ng-click="showInfo()" class="info-btn">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 199.943 199.943" style="enable-background:new 0 0 199.943 199.943;" xml:space="preserve">
+              <g>
+                <path style="fill:#ffffff;" d="M99.972,0.004C44.85,0.004,0,44.847,0,99.968c0,55.125,44.847,99.972,99.972,99.972
+                  s99.972-44.847,99.972-99.972C199.943,44.847,155.093,0.004,99.972,0.004z M99.972,190.957c-50.168,0-90.996-40.813-90.996-90.989
+                  c0-50.172,40.828-90.992,90.996-90.992c50.175,0,91.003,40.817,91.003,90.992S150.147,190.957,99.972,190.957z"/>
+                <path style="fill:#ffffff;" d="M99.324,67.354c-3.708,0-6.725,3.01-6.725,6.728v75.979c0,3.722,3.017,6.739,6.725,6.739
+                  c3.722,0,6.739-3.017,6.739-6.739V74.082C106.063,70.364,103.042,67.354,99.324,67.354z"/>
+                <circle style="fill:#ffffff;" cx="99.746" cy="48.697" r="8.178"/>
+              </g>
+            </svg>
+          </a>
+          <a class="close-btn" href="#/works/">
+            <svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                <defs></defs>
+                <g id="Asset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="Tablet-9″-Landscape" sketch:type="MSArtboardGroup" transform="translate(-57.000000, -401.000000)" fill="#FFFFFF">
+                        <g id="Cross" sketch:type="MSLayerGroup" transform="translate(57.000000, 401.000000)">
+                            <path d="M10.6192327,11.3263395 L1.1727624,1.87986918 L0.819209008,1.52631579 L1.52631579,0.819209008 L1.87986918,1.1727624 L11.3263395,10.6192327 L20.2991257,1.64644661 L20.652679,1.29289322 L21.3597858,2 L21.0062324,2.35355339 L12.0334463,11.3263395 L20.5325482,19.8254414 L20.8861016,20.1789948 L20.1789948,20.8861016 L19.8254414,20.5325482 L11.3263395,12.0334463 L2.35355339,21.0062324 L2,21.3597858 L1.29289322,20.652679 L1.64644661,20.2991257 L10.6192327,11.3263395 Z" id="Line-Copy-17" sketch:type="MSShapeGroup"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </a>
+        </div>
+
+        <div class="info animated" ng-class="{fadeIn : infoActive === true}" >
+          <h6>{{work.catName}}</h6>
+          <div ng-show="{{work.haveTools}}">
+            <strong>Tools Used : </strong> <span ng-repeat="tool in work.tools">{{tool}} </span>
+          </div>
+
+          <a href="{{work.link}}" ng-show="{{work.haveLink}}" target="_blank" class="btn btn-holo">{{work.linkName}}</a>
+
+        </div>
+              </div>
+    </div>
+
+    <div class="row work-images">
+      <div class="container">
+        <img ng-src="{{work.thumbnail}}" alt="{{work.caption}}">
+      </div>
+    </div>
+  </div>
+</div>

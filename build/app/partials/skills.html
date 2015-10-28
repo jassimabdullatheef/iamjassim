@@ -1,0 +1,26 @@
+<div class="row me" >
+  <div class="header">
+    <div class="container">
+      <div class="profile-pic">
+        <img src="asset/images/jassim-abdul-latheef.jpg" alt="Jassim Abdul Latheef">
+      </div>
+      <h2>Jassim Abdul Latheef</h2>
+
+      <a href="#/connect" class="btn btn-white pull-right">Contact me</a>
+    </div>
+  </div>
+
+</div>
+<div class="row career" ng-controller="meController">
+  <div class="container">
+    <div class="skills col-md-4" ng-repeat="skill in skills">
+      {{skill.name}}
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{skill.percentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.percentage}}%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

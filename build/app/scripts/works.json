@@ -1,0 +1,169 @@
+[
+  {
+    "id" : 0,
+    "caption" : "Devious Angel",
+    "url" : "devious-angel",
+    "cat" : "others",
+    "catName" : "Banner Design",
+    "color" : "#7A7BC7",
+    "thumbnail" : "asset/images/works/devious-angel-thumb.jpg"
+  },
+  {
+    "id" : 1,
+    "caption" : "Profile Card",
+    "url" : "profile-card",
+    "cat" : "others",
+    "catName" : "UI Design",
+    "color" : "#b9c8d0",
+    "thumbnail" : "asset/images/works/profile-UI.jpg"
+  },
+  {
+    "id" : 2,
+    "caption" : "Delmon Group of Companies",
+    "url" : "delmon",
+    "cat" : "website",
+    "catName" : "Website Design & Development",
+    "color" : "#4084D7",
+    "thumbnail" : "asset/images/works/delmon-thumb.jpg",
+    "link" : "http://www.delmon.com.sa",
+    "haveLink" : true,
+    "linkName" : "Visit Website",
+    "tools" : ["HTML","CSS","Wordpress","Javascript","Photoshop"],
+    "haveTools" : true
+  },
+  {
+    "id" : 3,
+    "caption" : "Fudbuddy",
+    "url" : "fudbuddy-logo",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#1AA994",
+    "thumbnail" : "asset/images/works/fudbuddy-logo.jpg"
+  },
+  {
+    "id" : 4,
+    "caption" : "Movie Card",
+    "url" : "movie-card",
+    "cat" : "others",
+    "catName" : "UI Design",
+    "color" : "#EA4B25",
+    "thumbnail" : "asset/images/works/Movie-poster-UI.jpg"
+  },
+  {
+    "id" : 5,
+    "caption" : "Fahmi Rumiah",
+    "url" : "fahmi-rumiah",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#AA5585",
+    "thumbnail" : "asset/images/works/fahmi-thumb.jpg"
+  },
+  {
+    "id" : 6,
+    "caption" : "Boost",
+    "url" : "boost",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#302837",
+    "thumbnail" : "asset/images/works/boost-thumb.jpg"
+  },
+  {
+    "id" : 7,
+    "caption" : "Mobile Signin",
+    "url" : "mobile-signin",
+    "cat" : "others",
+    "catName" : "UI Design",
+    "color" : "#5F96DC",
+    "thumbnail" : "asset/images/works/Journal-Signin-UI-thumb.jpg"
+  },
+  {
+    "id" : 8,
+    "caption" : "Fudbuddy",
+    "url" : "fudbuddy-website",
+    "cat" : "website",
+    "catName" : "Website Design",
+    "color" : "#CABC29",
+    "thumbnail" : "asset/images/works/fudbuddy-website.jpeg"
+  },
+  {
+    "id" : 9,
+    "caption" : "AlQudwa",
+    "url" : "alqudwa",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#C1A141",
+    "thumbnail" : "asset/images/works/alqudwa-thumb.jpg"
+  },
+  {
+    "id" : 10,
+    "caption" : "Abu Abdul Aziz Studio & Labs",
+    "url" : "asl",
+    "cat" : "website",
+    "catName" : "Website Design & Development",
+    "color" : "#1A4071",
+    "thumbnail" : "asset/images/works/asl-thumb.jpg"
+  },
+  {
+    "id" : 11,
+    "caption" : "Loyal IT Solutions",
+    "url" : "loyal",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#0C70BB",
+    "thumbnail" : "asset/images/works/loyal-thumb.jpg"
+  },
+  {
+    "id" : 12,
+    "caption" : "Breaking News",
+    "url" : "breaking-news",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#87ACB2",
+    "thumbnail" : "asset/images/works/Breaking-news-thumb.jpg"
+  },
+  {
+    "id" : 13,
+    "caption" : "My Personal Portfolio",
+    "url" : "iamjassim",
+    "cat" : "website",
+    "catName" : "Website Design",
+    "color" : "#A3B488",
+    "thumbnail" : "asset/images/works/iamjassimv2-thumb.jpg"
+  },
+  {
+    "id" : 14,
+    "caption" : "Krishna Plywoods",
+    "url" : "krishna-plywood",
+    "cat" : "website",
+    "catName" : "Website Design",
+    "color" : "#E28C43",
+    "thumbnail" : "asset/images/works/krishna-thumb.jpg"
+  },
+  {
+    "id" : 15,
+    "caption" : "Aryas Group",
+    "url" : "aryas",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#239BBA",
+    "thumbnail" : "asset/images/works/aryas-thumb.jpg"
+  },
+  {
+    "id" : 16,
+    "caption" : "Holymatha Overseas",
+    "url" : "holymatha",
+    "cat" : "website",
+    "catName" : "Website Design",
+    "color" : "#87CDE4",
+    "thumbnail" : "asset/images/works/holymatha-thumb.jpg"
+  },
+  {
+    "id" : 17,
+    "caption" : "Minion",
+    "url" : "minion",
+    "cat" : "others",
+    "catName" : "Photoshop Painting",
+    "color" : "#F9D563",
+    "thumbnail" : "asset/images/works/minion-thumb.jpg"
+  }
+]

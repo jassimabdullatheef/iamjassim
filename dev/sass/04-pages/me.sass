@@ -1,0 +1,39 @@
+@import "../02-basics/config"
+.row.me
+  @include gradient(179deg, #83ABFF 1%, #7697DC 99%)
+  .header
+    background:
+      image: url("../images/header-bg-icons.png")
+      size: 100%
+      attachment: fixed
+      repeat : repeat
+    padding: 100px 0 20px 0
+    .profile-pic
+      width: 50px
+      @include border-radius(100%)
+      overflow: hidden
+      float: left
+      margin-right: 20px
+      img
+        width: 100%
+    h2
+      float: left
+      color: white
+      font-weight: normal
+
+.row.resume
+  padding-top: 50px
+
+.row.career,.row.education
+  padding-top: 50px
+  .job,.course
+    margin-top: 20px
+    .timeline
+      text-transform: uppercase
+      font-weight: bold
+      width: 100%
+      border-bottom: 1px solid $lightBermudaGray
+    h4,h5,h6
+      margin-bottom: 5px
+    h4
+       color: $bermudaGray

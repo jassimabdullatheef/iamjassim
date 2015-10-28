@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="iamjassim">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>iamjassim</title>
@@ -14,7 +15,7 @@
   <!-- Header -->
   <nav>
     <!-- Logo -->
-    <logo><a href="#"><h4>Jassim</h4></a></logo>
+    <logo><a href="/"><h4>Jassim</h4></a></logo>
 
     <!-- Menu -->
     <menu>
@@ -29,10 +30,9 @@
         </li>
         <li ng-class="{active: $route.current.activeTab == 'me'}" ><a href="#/me">Me</a>
           <ul class="sub-menu">
-            <li><a href="#">Bio</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#/me/career">Career</a></li>
+            <li><a href="#/me/education">Education</a></li>
+            <li><a href="#/me/skills">Skills</a></li>
           </ul>
         </li>
         <li ng-class="{active: $route.current.activeTab == 'connect'}"><a href="#/connect">Connect</a></li>
@@ -44,6 +44,7 @@
   <script type="text/javascript" src="asset/bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="asset/bower_components/angular-animate/angular-animate.min.js"></script>
   <script type="text/javascript" src="asset/bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="asset/bower_components/angular-resource/angular-resource.min.js"></script>
   <script type="text/javascript" src="asset/bower_components/jquery/dist/jquery.min.js"></script>
   <!-- <script type="text/javascript" src = "scripts/modernizer.min.js"></script> -->
   <!-- <script type="text/javascript" src = "scripts/page-transition.js"></script> -->

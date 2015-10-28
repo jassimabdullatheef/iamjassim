@@ -1,9 +1,9 @@
-var app = angular.module('iamjassim',['ngRoute','ngAnimate']);
+var app = angular.module('iamjassim',['ngRoute','ngAnimate','ngResource']);
 
 
 
 
-app.config(['$routeProvider',function($routeProvider){
+app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
   // var pages = JSON.parse(pageJson);
   $routeProvider
     .when('',{
@@ -16,9 +16,29 @@ app.config(['$routeProvider',function($routeProvider){
       controller : 'workController',
       activeTab : 'works'
     })
+    .when('/works/:url',{
+      templateUrl : 'partials/work-single.html',
+      controller : 'workController',
+      activeTab : ''
+    })
     .when('/me',{
       templateUrl : 'partials/me.html',
-      controller : 'mainController',
+      controller : 'meController',
+      activeTab : 'me'
+    })
+    .when('/me/career',{
+      templateUrl : 'partials/career.html',
+      controller : 'meController',
+      activeTab : 'me'
+    })
+    .when('/me/education',{
+      templateUrl : 'partials/education.html',
+      controller : 'meController',
+      activeTab : 'me'
+    })
+    .when('/me/skills',{
+      templateUrl : 'partials/skills.html',
+      controller : 'meController',
       activeTab : 'me'
     })
     .when('/connect',{
@@ -33,3 +53,7 @@ app.config(['$routeProvider',function($routeProvider){
     });
 
 }]);
+
+// app.get(function(req, res) {
+//     res.sendfile(__dirname + 'index.html');
+// });

@@ -28,5 +28,8 @@
     "Angular",
     "Gulp"
   ],
-  "private": true
+  "private": true,
+  "resolutions": {
+    "angular": "1.4.7"
+  }
 }
