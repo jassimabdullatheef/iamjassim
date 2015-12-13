@@ -28,29 +28,30 @@ app.controller('homeController',['$scope',function($scope){
       id : 0,
       image : 'asset/images/responsive-website-designing.png',
       caption : 'Web Designing',
-      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
+      detail : 'I design and develop static and dynamic websites with focus on what the end user needs. I\'m always following the trend to produce more appealing results.'
     },
     {
       id : 1,
       image : 'asset/images/Logo-Design.png',
       caption : 'Branding',
-      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
+      detail : 'Brand identity is one of the most crucial element of a business. I design brand identities that can express and represent the values of business.'
     },
     {
       id : 2,
-      image : 'asset/images/cms-development.png',
-      caption : 'CMS Development',
-      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
+      image : 'asset/images/UI-Designing.png',
+      caption : 'UI/UX Designing',
+      detail : 'I design user interfaces with better user experience in mind. I follow empathetic approach to determine the best ways to design interactions and experiences.'
     },
     {
       id : 3,
-      image : 'asset/images/UI-Designing.png',
-      caption : 'UI/UX Designing',
-      detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut tellus eleifend, porta lorem eget, vestibulum mauris. Phasellus et volutpat leo'
+      image : 'asset/images/cms-development.png',
+      caption : 'Frontend & CMS Development',
+      detail : 'I develop Wordpress themes as per client requirements. I do Front end web development implementing better interactivity and flow.'
+    
     }
   ];
   $scope.sliderAutoPlay = true;
-  $scope.sliderInterval = 5000;
+  $scope.sliderInterval = 10000;
   // $scope.slider =  slider.showSlider(slides);
 }]);
 
@@ -93,38 +94,38 @@ app.controller('workController',['$scope','$routeParams','$location', 'workServi
 app.controller('meController',['$scope',function($scope){
   $scope.jobs = [
     {
+      title : 'Freelance Designer and Developer',
+      company : 'Freelance',
+      place : 'Dammam, Saudi Arabia',
+      From : 'Sep, 2013',
+      To : 'Present',
+      descr : 'As a freelance designer and developer, I am providing wide scale of services like Web Designing, Frontend Development ,CMS Development, Basic SEO, Icon Design, Responsive Designs ,UI Designing, UX Designing, Branding, Print Designing, Domain Registration and Hosting'
+    },{
       title : 'Web Specialist and Operations Officer',
       company : 'Delmon Group of Companies',
       place : 'Dammam, Saudi Arabia',
       From : 'Nov, 2013',
       To : 'Present',
-      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    },{
-      title : 'Full Stack Designer and Developer',
-      company : 'Freelance',
-      place : 'Dammam, Saudi Arabia',
-      From : 'Sep, 2013',
-      To : 'Present',
-      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      descr : 'I designed and developed the corporate website for Delmon Group of Companies. I manage the CMS website and all social media accounts for the company. I have also developed small scale apps for internal purposes. I am providing Desktop and Networking Support as well. Apart from these, I am also assisting Group operations, Office Administrations, and HR Management.'
     },{
       title : 'Web Designer and Developer',
       company : 'Count2infinity',
       place : 'Kerala, India',
       From : 'Mar, 2013',
       To : 'Sep, 2013',
-      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      descr : 'In Count2Infinity, I have done Web Designing, Brand Identity Designing, Print Designing and Basic SEO.'
     },{
       title : 'Social Interactive Media Advicer',
       company : '[24/7] Inc.',
       place : 'Banglore, India',
       From : 'Oct, 2012',
       To : 'Feb, 2013',
-      descr : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      descr : 'in [24/7] Inc. I worked as customer support agent for online shopping giant Sears.com'
     }
   ];
   $scope.courses = [
     {
-      name : 'Bachelor of Computer Apllication',
+      name : 'Bachelor of Computer Application',
       school : 'Mahatma Gandhi University',
       place : 'Kerala, India',
       From : '2008',
@@ -207,3 +208,40 @@ app.controller('meController',['$scope',function($scope){
     }
   ];
 }]);
+
+app.controller('connectController',['$scope',function($scope){
+  $scope.activeForm = 'email';
+  $scope.rows = 1;
+
+  $scope.textareaChange = function(){
+    // var height = $("#message").prop('scrollHeight');
+    // $("#message").css('height',height);
+    // console.log($("#message").prop('scrollHeight'));
+    // var textarea = $("#message");
+    // line-height is something like '12px', we need the number
+    var lineHeight = Number($("#message").css('line-height').split(/\D/)[0]);
+    var newHeight = Number($("#message").prop('scrollHeight'));
+    var currentHeight = Number($("#message").prop('clientHeight'));
+
+    // if (newHeight > currentHeight) {
+      $("#message").css('overflow', 'hidden'); // prevent scrollbar appearance
+      // $("#message").css('height', Number(currentHeight)  + Number(lineHeight.split(/\D/)[0]) + 'px');
+      $("#message").css('height', newHeight  + 'px');
+      // console.log(Number($("#message").prop('clientHeight')));
+      // console.log('Current Height' + Number(currentHeight)  + ' New Height' + Number(newHeight) +  ' Line Height' +  Number(lineHeight));
+    // }
+
+  };
+  $scope.goToForm = function(form){
+      $scope.activeForm = form;
+  };
+  $scope.submitForm = function(){
+    var name = $scope.visitorName;
+    var emailId = $scope.visitorEmail;
+    var message  = $scope.visitorMessage;
+
+    console.log(name + ' ' + emailId +' '+ message);
+  };
+}]);
+
+

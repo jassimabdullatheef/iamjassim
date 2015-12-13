@@ -11,17 +11,30 @@
   </div>
 
 </div>
+<div class="row me-nav hidden-md hidden-lg hidden-sm">
+  <div class="container">
+    <nav>
+      <menu>
+        <ul>
+          <li><a href="#/me">Me</a></li>
+          <li><a href="#/me/career">Career</a></li>
+          <li><a href="#/me/education">Education</a></li>
+          <li><a href="#/me/skills">Skills</a></li>
+        </ul>
+      </menu>
+    </nav>
+  </div>
+</div>
 <div class="row education" ng-controller="meController">
   <div class="container">
-    <div class="course row" ng-repeat="course in courses">
+    <div class="course" ng-repeat="course in courses">
       <div class="timeline">{{course.From}} - {{course.To}}</div>
       <div class="col-md-4">
-        <h4>{{course.name}}</h4>
         <h5>{{course.school}}</h5>
         <h6>{{course.place}}</h6>
       </div>
       <div class="col-md-8">
-        <p>{{course.descr}}</p>
+        <h4>{{course.name}}</h4>
       </div>
     </div>
   </div>

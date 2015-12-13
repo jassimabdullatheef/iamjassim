@@ -11,9 +11,23 @@
   </div>
 
 </div>
+<div class="row me-nav hidden-md hidden-lg hidden-sm">
+  <div class="container">
+    <nav>
+      <menu>
+        <ul>
+          <li><a href="#/me">Me</a></li>
+          <li><a href="#/me/career">Career</a></li>
+          <li><a href="#/me/education">Education</a></li>
+          <li><a href="#/me/skills">Skills</a></li>
+        </ul>
+      </menu>
+    </nav>
+  </div>
+</div>
 <div class="row career" ng-controller="meController">
   <div class="container">
-    <div class="job row" ng-repeat="job in jobs">
+    <div class="job" ng-repeat="job in jobs">
       <div class="timeline">{{job.From}} - {{job.To}}</div>
       <div class="col-md-4">
         <h4>{{job.title}}</h4>
@@ -23,6 +37,8 @@
       <div class="col-md-8">
         <p>{{job.descr}}</p>
       </div>
+      <br>
     </div>
+
   </div>
 </div>

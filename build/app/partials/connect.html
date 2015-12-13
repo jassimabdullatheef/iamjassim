@@ -1,1 +1,52 @@
-<h1>Connect</h1>
+<div class="connect" ng-controller="connectController">
+  <div class="row message">
+    <div class="container text-center">
+      <h1>Contact Me</h1>
+      <p>I‘m glad to connect with you. Just drop me an email or follow me on twitter or facebook.</p>
+      <div class="form">
+        <ul>
+          <li ng-show="activeForm == 'email'">
+            <form name="emailForm" ng-submit="goToForm('name')">
+              <input ng-model="visitorEmail" type="email" class="text" required="required" name="email" placeholder="Your email">
+              <button type="submit" class="btn btn-white next-btn">Next</button>
+            </form>
+          </li>
+          <li ng-show="activeForm == 'name'" >
+            <form name="nameForm" ng-submit="goToForm('message')">
+              <input ng-model="visitorName" type="text" class="text" required="required" name="name" placeholder="Your Name">
+              <button type="submit"  class="btn btn-white next-btn">Next</button>
+            </form>
+          </li>
+          <li ng-show="activeForm == 'message'" >
+            <form name="messageForm" ng-submit="submitForm()">
+              <textarea id="message" rows="{{rows}}" ng-model="visitorMessage" ng-change="textareaChange() " class="text" required="required" name="message" placeholder="Your Message"></textarea>
+              <button type="submit"  class="btn btn-white sbt-btn">Submit</button>
+            </form>
+          </li>
+        </ul>
+    </div>
+
+    </div>
+  </div>
+</div>
+<div class="row social">
+  <div class="container">
+    <ul class="icons">
+      <li><a href="https://twitter.com/JassimPA" target="_blank">
+        <span class="icon-twitter"></span>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/jassimabdullatheef" target="_blank">
+        <span class="icon-linkedin"></span>
+      </a></li>
+      <li><a href="https://www.behance.net/jassimabdullatheef" target="_blank">
+        <span class="icon-behance"></span>
+      </a></li>
+      <li><a href="https://plus.google.com/u/0/106578107001909289243?rel=author" target="_blank">
+        <span class="icon-google-plus"></span>
+      </a></li>
+      <li><a href="https://www.facebook.com/jassimabdullatheef" target="_blank">
+        <span class="icon-facebook"></span>
+      </a></li>
+    </ul>
+  </div>
+</div>

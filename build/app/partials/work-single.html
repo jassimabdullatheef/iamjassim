@@ -45,7 +45,21 @@
 
     <div class="row work-images">
       <div class="container">
-        <img ng-src="{{work.thumbnail}}" alt="{{work.caption}}">
+        <img class="animated zoomIn" ng-repeat="image in work.images" ng-src="{{image}}" alt="{{work.caption}}">
+      </div>
+    </div>
+    <div class="row works-all">
+      <div class="container">
+        <h3>All Works</h3>
+          <div  class="col-xs-12 col-md-6 col-lg-4 text-center work-thumbnail" ng-repeat="work in works" ng-class="{active : isActive(work.cat)}" ng-click="go('works/'+work.url)" back-img="{{work.thumbnail}}">
+            <div class="work-dscr" style="background-color :{{work.color}}">
+              <h5>{{work.caption}}</h5>
+              <a href="#/works/{{work.url}}" class="btn btn-holo">View Work</a>
+              <div class="cat">
+                <pre>{{work.catName}}</pre>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>

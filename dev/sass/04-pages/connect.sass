@@ -1,0 +1,96 @@
+@import "../02-basics/config"
+
+.connect
+  @include gradient(179deg, #83ABFF 1%, #7697DC 99%)
+  .message
+    background:
+      image: url("../images/header-bg-icons.png")
+      size: 100%
+      attachment: fixed
+      repeat : repeat
+    padding: 50px 0
+
+    h1
+      color: $white !important
+    p
+      color: $lightBlue1
+    .form
+      ul
+        padding: 0
+        margin: 0
+        display: block
+        float: left
+        width: 100%
+        li
+          width: 100%
+          float: left
+          display: block
+          position: relative
+          form
+            width: 100%
+            float: left
+            position: relative
+            label
+               color: $white
+               font-size: 18px
+               @include transition(all 0.2s ease)
+               margin-top: 10px
+               position: absolute
+               display: inline-block
+               overflow: hidden
+               left: 0
+               z-index: 0
+               width: 100%
+            input,textarea,input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
+              width: 100%
+              border: none
+              margin-bottom: 20px
+              font-size: 18px
+              background-color: transparent !important
+              border-bottom: 1px solid $white
+              padding: 10px 20px
+              color: $white !important
+              text-align: center
+              z-index: 1
+              font-family: "Asap" sans-serif
+              &:focus,&:active
+                border: none
+                outline: none
+                border-bottom: 1px solid $white
+                background-color: transparent
+              &::-webkit-input-placeholder
+                 color: $white
+              &:-moz-placeholder
+                 color: $white
+              &::-moz-placeholder
+                 color: $white
+              &:-ms-input-placeholder
+                 color: $white
+              &.ng-touched.ng-invalid
+                border-bottom-color: $orange
+              &.ng-untouched.ng-invalid
+                border-bottom-color: $white
+
+.social
+    ul.icons
+        margin-top: 50px
+        text-align: center
+        li
+            display: inline-block
+            margin: 30px 20px
+            a
+                width: 100%
+                float: left
+                text-decoration: none
+                span
+                    font-size: 30px
+                    padding: 20px
+                    border: 2px solid $lightBermudaGray
+                    @include border-radius(15px)
+                    color : $lightBermudaGray
+            &:hover
+                span
+                    color: $white
+                    background-color : $blue
+                    border-color: $blue
+                    

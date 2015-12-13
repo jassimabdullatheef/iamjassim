@@ -24,6 +24,7 @@
         @include transition(all cubic-bezier(0.23, 1.03, 0.34, 1.11) 0.8s)
         @include transform(translate(0px, -50px))
         font-weight: 300
+        text-align: center
       pre
         color: rgba(255,255,255,0.8)
         border-top: 1px solid rgba(255,255,255,0.5)
@@ -105,6 +106,7 @@
       color: $white
     .info
       display: none
+      margin-bottom: 20px
       &.fadeIn
         display: block
 
@@ -117,11 +119,22 @@
   .work-images
     padding: 150px 10px 50px 10px
     background-color: #e5e5e5
+    overflow: hidden
     img
       @include box-shadow(rgba(0, 0, 0, 0.4) 0px 3px 8px)
       border: 1px solid rgba(255,255,255,0.2)
+      margin-bottom: 50px
 
 @media(max-width: $screen-xs-max)
+  .works-all
+    .work-thumbnail
+      height: 0px
+      padding: 0px
+      display: none
+      &.active
+        height: 300px
+        display: block
+
   .work-single
     .work-details
       padding-top: 15px
@@ -135,3 +148,12 @@
           width: 20px
     .work-images
       padding-top: 100px
+
+
+// Work Navigation on mobile
+
+.work-nav
+  nav
+    position: fixed
+    bottom : none
+    top: 0px

@@ -133,7 +133,7 @@ nav
               fill: $bermudaGray
           &:hover
             background-color: $bgGrayDark2
-@media(max-width : 850px)
+@media(max-width : $screen-xs-max)
   nav
     menu
       ul
@@ -172,3 +172,7 @@ nav
           &.active
             a
               padding: 10px 20px
+            ul.sub-menu
+              li
+                a
+                  padding-top: 16px

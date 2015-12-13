@@ -1,5 +1,6 @@
 var app = angular.module('iamjassim',['ngRoute','ngAnimate','ngResource']);
 
+angular.bootstrap(document.getElementById('app-root'), ['iamjassim'], {debugInfoEnabled: true});
 
 
 
@@ -43,7 +44,7 @@ app.config(['$routeProvider','$locationProvider',function($routeProvider,$locati
     })
     .when('/connect',{
       templateUrl : 'partials/connect.html',
-      controller : 'mainController',
+      controller : 'connectController',
       activeTab : 'connect'
     })
     .otherwise({

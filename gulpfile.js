@@ -22,7 +22,7 @@ gulp.task('script', function(){
     gulp.src(['dev/scripts/app.js','dev/scripts/controllers.js','dev/scripts/directives.js','dev/scripts/filters.js','dev/scripts/services.js','dev/scripts/animations.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(concat('main.js'))
     .pipe(gulp.dest('./build/app/scripts'));
 });

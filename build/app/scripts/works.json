@@ -6,7 +6,11 @@
     "cat" : "others",
     "catName" : "Banner Design",
     "color" : "#7A7BC7",
-    "thumbnail" : "asset/images/works/devious-angel-thumb.jpg"
+    "thumbnail" : "asset/images/works/devious-angel-thumb.jpg",
+    "images" : ["asset/images/works/devious-angel/1.jpg","asset/images/works/devious-angel/2.jpg","asset/images/works/devious-angel/3.jpg"],
+    "haveLink" : false,
+    "tools" : ["Adobe Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 1,
@@ -15,7 +19,23 @@
     "cat" : "others",
     "catName" : "UI Design",
     "color" : "#b9c8d0",
-    "thumbnail" : "asset/images/works/profile-UI.jpg"
+    "thumbnail" : "asset/images/works/profile-UI.jpg",
+    "images" : ["asset/images/works/profile-UI.jpg"]
+  },
+  {
+    "id" : 16,
+    "caption" : "Provision",
+    "url" : "provision",
+    "cat" : "branding",
+    "catName" : "Brand Identity Design",
+    "color" : "#19A1D3",
+    "thumbnail" : "asset/images/works/provision/1.jpg",
+    "images" : ["asset/images/works/provision/1.jpg","asset/images/works/provision/2.jpg","asset/images/works/provision/3.jpg"],
+     "link" : "http://provisiondubai.com",
+    "haveLink" : true,
+    "linkName" : "Visit Website",
+    "tools" : ["Adobe Photoshop","Adobe Illustrator"],
+    "haveTools" : true
   },
   {
     "id" : 2,
@@ -25,6 +45,7 @@
     "catName" : "Website Design & Development",
     "color" : "#4084D7",
     "thumbnail" : "asset/images/works/delmon-thumb.jpg",
+    "images" : ["asset/images/works/delmon/1.jpg"],
     "link" : "http://www.delmon.com.sa",
     "haveLink" : true,
     "linkName" : "Visit Website",
@@ -38,7 +59,13 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#1AA994",
-    "thumbnail" : "asset/images/works/fudbuddy-logo.jpg"
+    "thumbnail" : "asset/images/works/fudbuddy-logo.jpg",
+    "images" : ["asset/images/works/fudbuddy/logo1.jpg","asset/images/works/fudbuddy/logo2.jpg","asset/images/works/fudbuddy/logo3.jpg","asset/images/works/fudbuddy/logo4.jpg","asset/images/works/fudbuddy/logo5.jpg","asset/images/works/fudbuddy/logo6.jpg"],
+    "link" : "https://www.behance.net/gallery/25413225/Fudbuddy-Brand-Identity-Design",
+    "linkName" : "View Behance Post",
+    "haveLink" : true,
+    "tools" : ["Photoshop","Illustrator"],
+    "haveTools" : true
   },
   {
     "id" : 4,
@@ -47,7 +74,10 @@
     "cat" : "others",
     "catName" : "UI Design",
     "color" : "#EA4B25",
-    "thumbnail" : "asset/images/works/Movie-poster-UI.jpg"
+    "thumbnail" : "asset/images/works/Movie-poster-UI.jpg",
+    "images" : ["asset/images/works/Movie-poster-UI.jpg"],
+    "tools" : ["Sketch"],
+    "haveTools" : true
   },
   {
     "id" : 5,
@@ -56,7 +86,10 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#AA5585",
-    "thumbnail" : "asset/images/works/fahmi-thumb.jpg"
+    "thumbnail" : "asset/images/works/fahmi-thumb.jpg",
+    "images" : ["asset/images/works/fahmi-rumiah/logo1.jpg","asset/images/works/fahmi-rumiah/logo2.jpg","asset/images/works/fahmi-rumiah/logo3.jpg"],
+    "tools" : ["Illustrator","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 6,
@@ -65,7 +98,10 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#302837",
-    "thumbnail" : "asset/images/works/boost-thumb.jpg"
+    "thumbnail" : "asset/images/works/boost-thumb.jpg",
+    "images" : ["asset/images/works/boost/0.jpg","asset/images/works/boost/1.jpg","asset/images/works/boost/2.jpg","asset/images/works/boost/3.jpg"],
+    "tools" : ["Illustrator","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 7,
@@ -74,7 +110,10 @@
     "cat" : "others",
     "catName" : "UI Design",
     "color" : "#5F96DC",
-    "thumbnail" : "asset/images/works/Journal-Signin-UI-thumb.jpg"
+    "thumbnail" : "asset/images/works/Journal-Signin-UI-thumb.jpg",
+    "images" : ["asset/images/works/Journal-Signin-UI-thumb.jpg"],
+    "tools" : ["Sketch","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 8,
@@ -83,7 +122,13 @@
     "cat" : "website",
     "catName" : "Website Design",
     "color" : "#CABC29",
-    "thumbnail" : "asset/images/works/fudbuddy-website.jpeg"
+    "thumbnail" : "asset/images/works/fudbuddy-website.jpeg",
+    "images" : ["asset/images/works/fudbuddy/website.jpg"],
+    "link" : "http://iamjassim.com/fudbuddy/",
+    "linkName" : "Visit Website",
+    "haveLink" : true,
+    "tools" : ["HTML","CSS","Javascript","jQuery","Bootstrap","PHP","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 9,
@@ -92,7 +137,10 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#C1A141",
-    "thumbnail" : "asset/images/works/alqudwa-thumb.jpg"
+    "thumbnail" : "asset/images/works/alqudwa-thumb.jpg",
+    "images" : ["asset/images/works/alqudwa/1.jpg","asset/images/works/alqudwa/2.jpg","asset/images/works/alqudwa/3.jpg","asset/images/works/alqudwa/4.jpg","asset/images/works/alqudwa/5.jpg"],
+    "tools" : ["Illustrator","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 10,
@@ -101,7 +149,13 @@
     "cat" : "website",
     "catName" : "Website Design & Development",
     "color" : "#1A4071",
-    "thumbnail" : "asset/images/works/asl-thumb.jpg"
+    "thumbnail" : "asset/images/works/asl-thumb.jpg",
+    "images" : ["asset/images/works/asl/0.jpg","asset/images/works/asl/1.png","asset/images/works/asl/2.png","asset/images/works/asl/3.png"],
+    "link" : "http://abuabdulazizstudiolabs.com/",
+    "linkName" : "Visit Website",
+    "haveLink" : true,
+    "tools" : ["Wordpress","HTML","CSS","Javascript","jQuery","Bootstrap","PHP","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 11,
@@ -110,7 +164,10 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#0C70BB",
-    "thumbnail" : "asset/images/works/loyal-thumb.jpg"
+    "thumbnail" : "asset/images/works/loyal-thumb.jpg",
+    "images" : ["asset/images/works/loyal/0.jpg","asset/images/works/loyal/1.jpg","asset/images/works/loyal/2.jpg","asset/images/works/loyal/3.jpg","asset/images/works/loyal/4.jpg","asset/images/works/loyal/5.jpg","asset/images/works/loyal/6.jpg","asset/images/works/loyal/7.jpg","asset/images/works/loyal/8.jpg","asset/images/works/loyal/9.jpg"],
+    "tools" : ["Illustrator","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 12,
@@ -119,16 +176,22 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#87ACB2",
-    "thumbnail" : "asset/images/works/Breaking-news-thumb.jpg"
+    "thumbnail" : "asset/images/works/Breaking-news-thumb.jpg",
+    "images" : ["asset/images/works/breaking-news/1.jpg","asset/images/works/breaking-news/2.jpg","asset/images/works/breaking-news/3.jpg"],
+    "tools" : ["Illustrator","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 13,
     "caption" : "My Personal Portfolio",
-    "url" : "iamjassim",
+    "url" : "personal-website",
     "cat" : "website",
     "catName" : "Website Design",
     "color" : "#A3B488",
-    "thumbnail" : "asset/images/works/iamjassimv2-thumb.jpg"
+    "thumbnail" : "asset/images/works/iamjassimv2-thumb.jpg",
+    "images" : ["asset/images/works/me/0.jpg","asset/images/works/me/1.jpg","asset/images/works/me/2.jpg"],
+    "tools" : ["HTML","CSS","Javascript","jQuery","PHP","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 14,
@@ -137,7 +200,10 @@
     "cat" : "website",
     "catName" : "Website Design",
     "color" : "#E28C43",
-    "thumbnail" : "asset/images/works/krishna-thumb.jpg"
+    "thumbnail" : "asset/images/works/krishna-thumb.jpg",
+    "images" : ["asset/images/works/krishna/0.jpg"],
+    "tools" : ["HTML","CSS","Javascript","jQuery","PHP","Photoshop"],
+    "haveTools" : true
   },
   {
     "id" : 15,
@@ -146,16 +212,10 @@
     "cat" : "branding",
     "catName" : "Brand Identity Design",
     "color" : "#239BBA",
-    "thumbnail" : "asset/images/works/aryas-thumb.jpg"
-  },
-  {
-    "id" : 16,
-    "caption" : "Holymatha Overseas",
-    "url" : "holymatha",
-    "cat" : "website",
-    "catName" : "Website Design",
-    "color" : "#87CDE4",
-    "thumbnail" : "asset/images/works/holymatha-thumb.jpg"
+    "thumbnail" : "asset/images/works/aryas-thumb.jpg",
+    "images" : ["asset/images/works/aryas/1.jpg","asset/images/works/aryas/2.jpg"],
+    "tools" : ["Illustrator"],
+    "haveTools" : true
   },
   {
     "id" : 17,
@@ -164,6 +224,9 @@
     "cat" : "others",
     "catName" : "Photoshop Painting",
     "color" : "#F9D563",
-    "thumbnail" : "asset/images/works/minion-thumb.jpg"
+    "thumbnail" : "asset/images/works/minion-thumb.jpg",
+    "images" : ["asset/images/works/minion/1.jpg"],
+    "tools" : ["Photoshop"],
+    "haveTools" : true
   }
 ]
